@@ -1,0 +1,57 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = 'http://www.yes24.com/24/category/bestseller?CategoryNumber=001'
+
+r = requests.get(url)
+soup = BeautifulSoup(r.text, "lxml")
+
+name = []
+auth = []
+booklab = []
+price = []
+for num in range(1, 21):
+    if(num >= 19):
+        n = soup.select_one('li.num' + str(num)+'_line' + '>p.copy > a')
+        a = soup.select_one('li.num' + str(num)+'_line' + '> p.aupu')
+        p = soup.select_one('li.num' + str(num)+'_line' + ' > p.price > strong')
+    else:
+        n = soup.select_one('li.num' + str(num)+ '>p.copy > a')
+        a = soup.select_one('li.num' + str(num)+ '> p.aupu')
+        p = soup.select_one('li.num' + str(num)+ ' > p.price > strong')
+
+    #name.append(a.get_text())
+    name.append(n.get_text())
+    auth.append(a.get_text().split('|')[0])
+    booklab.append(a.get_text().split('|')[1])
+    price.append(p.get_text())
+
+
+data = {'제목' : name, '저자' : auth, '출판사' : booklab, '가격': price}
+df = pd.DataFrame(data)
+
+print(df)
+#bestList > ol > li.num17 > p.price > strong
+#bestList > ol > li.num19_line > p.aupu
+#bestList > ol > li.num17 > p.aupu
+#bestList > ol > li.num19_line > p.copy > a
+# t = soup.select('p.copy > a')
+# name = []
+# for n in t:
+#     name.append(n.get_text())
+
+# t = soup.select('p.aupu > a:nth-child(1)')
+# auth = []
+# for n in t:
+#     auth.append(n.get_text())
+
+# t = soup.select('p.aupu > a:nth-child(2)')
+# book = []
+# for n in t:
+#     book.append(n.get_text())
+
+# #bestList > ol > li.num6 > p.aupu > a:nth-child(2)
+# #print(name)
+# #print(auth)
+# print(book)
