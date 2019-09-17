@@ -1,0 +1,76 @@
+#연습문제 두번째
+#openpyxl
+
+from openpyxl import Workbook
+import datetime
+
+# wb = Workbook()
+
+# ws = wb.active
+
+# ws['A1'] = 42
+
+# ws.append([1,2,3])
+
+# ws['A3'] = datetime.datetime.now()
+
+# wb.save('sample.xlsx')
+
+# import sqlite3
+
+# conn = sqlite3.connect('test.db')
+# cursor = conn.cursor()
+
+# cursor.execute("""CREATE "CREATE TABLE IF NOT EXISTS supermarket
+#      (Itemno INTEGER, Category TEXT, FoodName TEXT,
+#            Company TEXT, Price INTEGER)""")
+
+# sql = """INSERT INTO supermarket(Itemno, Category, FoodName, Company, Price)
+#      VALUES(?,?,?,?,?)"""
+
+# cursor.execute(sql, (1,'과일', '자몽', '마트', 1500))
+
+# sql = """INSERT INTO supermarket(Itemno, Category, FoodName, Company, Price)
+#      VALUES(?,?,?,?,?)"""
+
+# cursor.execute(sql, (2, ' ', ' ', ' ', 1000))
+
+# conn.commit()
+
+# #Workbook 생성
+# wb = Workbook()
+
+import xml.etree.ElementTree as ET
+
+# tree = ET.parse('books.xml')
+
+# print(type(tree))
+# s = tree.getiterator()
+
+# for i in s :
+#     print(i)
+# print(type(tree))
+# root = tree.getroot()
+# print(root)
+# print(type(root))
+
+import sqlite3
+
+conn = sqlite3.connect('test.db')
+cursor = conn.cursor()
+
+cursor.execute('SELECT * FROM Employee')
+
+table = cursor.fetchall()
+
+print(table)
+
+
+# tree = ET.parse('books.xml')
+# root = tree.getroot()
+# print(root)
+# print(root.tag)
+# print(root.attrib)
+# print(root.tail)
+# print(root.text)
+
