@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\stack">
+      <UniqueIdentifier>{22a47540-44bb-4b11-b8b2-be701b99fdf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\stack">
+      <UniqueIdentifier>{24e9356c-9d53-42a6-aedd-5ed0851b6fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\queue">
+      <UniqueIdentifier>{f8eba71c-3249-47b7-9426-bcaafd37dd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\queue">
+      <UniqueIdentifier>{e57dcd98-32a1-4bfc-8453-56f4f379615b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="infixToPostfix.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="infixToPostfixMain.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="ListStack.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="ListStackMain.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="PostCal.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="stackMain.c">
+      <Filter>소스 파일\stack</Filter>
+    </ClCompile>
+    <ClCompile Include="HamburgerSim.c">
+      <Filter>소스 파일\queue</Filter>
+    </ClCompile>
+    <ClCompile Include="LQueue.c">
+      <Filter>소스 파일\queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.c">
+      <Filter>소스 파일\queue</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueMain.c">
+      <Filter>소스 파일\queue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="infixToPostfix.h">
+      <Filter>소스 파일\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>헤더 파일\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="ListStack.h">
+      <Filter>헤더 파일\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="PostCal.h">
+      <Filter>헤더 파일\stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LQueue.h">
+      <Filter>헤더 파일\queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>헤더 파일\queue</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

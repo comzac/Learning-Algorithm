@@ -1,0 +1,14 @@
+﻿  expTree.c
+c:\users\leesunsoo\source\repos\tree\exptree.c(28): warning C4047: '함수': 'btn *'의 간접 참조 수준이 'Data'과(와) 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(28): warning C4024: 'MakeRightSubTree': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(29): warning C4047: '함수': 'btn *'의 간접 참조 수준이 'Data'과(와) 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(29): warning C4024: 'MakeLeftSubTree': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(32): warning C4047: '함수': 'Data'의 간접 참조 수준이 'btn *'과(와) 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(32): warning C4024: 'stackPush': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(34): warning C4047: 'return': 'btn *'의 간접 참조 수준이 'Data'과(와) 다릅니다.
+c:\users\leesunsoo\source\repos\tree\exptree.c(12): warning C4101: 'tok' :참조되지 않은 지역 변수입니다.
+  expTreeMain.c
+  코드를 생성하고 있습니다...
+c:\users\leesunsoo\source\repos\tree\exptree.c(74): warning C4716: 'showData': 값을 반환해야 합니다.
+  LINK : C:\Users\LeeSunSoo\source\repos\Tree\Debug\Tree.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  Tree.vcxproj -> C:\Users\LeeSunSoo\source\repos\Tree\Debug\Tree.exe
