@@ -29,7 +29,7 @@ bool searchLadder()
 
 	return true;
 }
-void search(int cnt, int y, int x) 
+void search(int cnt, int y) 
 {
 
 	if (cnt > 3)
@@ -50,7 +50,7 @@ void search(int cnt, int y, int x)
 			if (ladder[i][j] || ladder[i][j + 1] || ladder[i][j-1]) 
 				continue;
 			ladder[i][j] = true;
-			search(cnt + 1, i, j);
+			search(cnt + 1, i);
 			ladder[i][j] = false;
 		}
 	}
@@ -66,7 +66,7 @@ int main()
 		ladder[a][b] = true;
 	}
 
-	search(0, 1, 1);
+	search(0, 1);
 
 	if (minimum == 5)
 		cout << -1;
