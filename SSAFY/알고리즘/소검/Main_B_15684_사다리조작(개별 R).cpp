@@ -45,8 +45,8 @@ void search(int cnt, int y)
 
 	for (int i = y; i <= Y; i++)
 	{
-		for (int j = 1; j <= X; j++)
-		{
+		for (int j = 1; j <= X; j++) // j = x 로 초기화하면 다음 재귀함수에서 행바꿈을 하는 과정에서 첫 사다리부터 조회해야하는데 x부터 시작하게 된다. 그래서 1로 초기화
+		{																		
 			if (ladder[i][j] || ladder[i][j + 1] || ladder[i][j-1]) 
 				continue;
 			ladder[i][j] = true;
@@ -56,6 +56,12 @@ void search(int cnt, int y)
 	}
 
 }
+																								/*
+																									ㅣ		ㅣ		ㅣ* 지점을 가로선 생성한 뒤, 다음 재귀함수로 x값인
+																									ㅣ		ㅣㅡㅡ*	ㅣ3을 전달하게 되면 3을 검사하고 다음으로 넘어가 
+																									ㅣ		ㅣ		ㅣy값이 +1 되고 다시 1번 세로선부터 조사해야하는데 
+																									ㅣ		ㅣ		ㅣj=x로 되어있으면 또 3번을 검사한다. 				   
+																								*/
 int main()
 {
 	cin >> X >> lines >> Y; 
