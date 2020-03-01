@@ -1,0 +1,66 @@
+# while(True):
+
+#     try:  
+#         first = int(input('첫번째 숫자 : '))
+#         second = int(input('두번째 숫자 : '))
+
+#         print("%d / %d = %d", (first, second, first/second))
+#         break
+#     except ValueError:
+#         print("유효한 숫자가 아닙니다")
+#     except ZeroDivisionError:
+#         print("유효한 숫자가 아닙니다")
+  
+# else:
+#     print("exception 발생안함")
+# finally:
+#     print("항상 실행됨")
+
+# def myfunc(a):
+#     return x1+a
+# x = 100
+# print(myfunc(5))
+
+
+# kor = int(input("kor score :"))
+
+# try :
+#     if kor <0 or kor > 100:
+#         raise Exception("국어 점수는 0부터 100점까지 입니다")
+#     print("kor : ", kor)
+# except Exception as e:
+#     print(e)
+
+import re
+
+# result = re.search(r'abc', 'abcdef')
+# print(result)
+# print(result.group())
+
+# result = re.search(r'..\w\w', '@#$%ABCDabcd')
+# print(result)   
+
+import requests
+from bs4 import BeautifulSoup 
+
+def get_news_content(url):   
+    response = requests.get(url)    
+    content = response.text
+    soup = BeautifulSoup(content, 'html5lib')
+    div = soup.find('div', attrs = {'id' : 'harmonyContainer'})    
+    content = ''    
+    for paragraph in div.find_all('p'):        
+        content += paragraph.get_text()  
+
+    return content
+
+
+news1 = get_news_content(' https://news.v.daum.net/v/20190617073049838')
+# print(news1)
+
+result = re.search(r'\w+@.+', news1)
+print(result.group())
+
+
+
+
