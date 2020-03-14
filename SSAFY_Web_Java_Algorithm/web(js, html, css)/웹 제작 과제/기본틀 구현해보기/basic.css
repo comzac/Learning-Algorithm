@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+
+body{
+	background-color: #e6ffff;
+	//background-color: black;
+}
+header{
+	overflow : hidden;
+	position: fixed;
+	width: 100%;
+	height : 200px;
+	min-width: 600px;
+	//border: 3px solid black;
+	z-index: 1;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqMkXVO9Vj6m3-s6z1o7Qi39yELR9kjah2glXI0K64zwVT9VYj");
+}
+
+#headerSub{
+	width : 1000px;
+	margin: 0 auto;;
+	//border: 10px solid ;
+}
+
+div#logoPart{
+	width: 200px;
+	float: left;
+	//border: 1px solid black;
+}
+	
+
+div#navPart{
+	width: 800px;
+	margin-left : 450px;
+	padding-top : 50px;
+	//border: 1px solid black;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+nav li{
+	display : inline-block;
+	float: left;
+    padding: 0 16px;
+    background: url(img/mainCut.gif) no-repeat right 5px;
+}
+
+
+#mainContent{
+	clear: both;
+	//border: 1px solid black;
+	overflow : hidden;
+	position: relative;
+	width: 100%;
+	min-width: 600px;
+	z-index: 0;
+}
+
+#mainNews{
+	clear: both;
+	//border: 1px solid black;
+	width : 1000px;
+	height : 200px;
+	margin: 0 auto;
+	padding-top: 210px;
+	background-color : white;
+}
+
+div#ani img[alt = "ic"]:first-of-type {
+	resize : both;
+	max-height : 300px;
+	position: relative;
+	animation: mymove 2s;
+	animation-fill-mode: both;
+	margin: 0 50px;
+	overflow: hidden;
+}
+
+div#ani img[alt = "ic"]:nth-last-of-type(1) {
+	resize : both;
+	max-height : 300px;
+	position: relative;
+	animation: mymove 2s;
+	animation-fill-mode: both;
+	margin: 0 50px;
+	overflow: hidden;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px; }
+}
+
+
+
+
+#subNews{
+	clear: both;
+	border: 4px solid e6ffff;
+	width: 1000px;
+	margin: 0 auto;;
+}
+
+#subNews aside{
+	display: inline-block;
+	//border: 1px solid black;
+	background-color : white;
+	width : 200px;
+	height : 1020px;
+	vertical-align : top;
+	margin: 10px 0;
+}
+
+#subNews div#subsub{
+	display: inline-block;
+	//border: 1px solid black;
+	width : 760px;
+	margin: 10px 10px;
+}
+
+#subsub article{
+	background-color : white;
+	display: inline-block;
+	//border: 1px solid black;
+	width : 100%;
+	height: 500px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 40px;
+}
+
+
+
+table{
+	margin : 10px auto;
+}
+
+table th{
+	background-color : #e6e6ff;
+	font-style: italic;
+}
+
+table th, td{
+	text-align: center;
+	height: 40px;
+}
+
+table tbody tr:nth-child(2n){
+	background-color: #e6ecff;
+}
+
+table tbody tr:nth-child(2n+1){
+	background-color: #ccd9ff;
+}
+
+table tbody tr td:nth-child(1){
+	font-size: 10px;
+}
+
+table tbody tr td:nth-child(2){
+	width : 60px;
+	font-weight: bold;
+}
+
+table tbody tr td:nth-child(3){
+	width : auto;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+footer{
+	//border: 1px solid black;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	font-size: 30px;
+	color: white;
+}
+
+
+
+
+

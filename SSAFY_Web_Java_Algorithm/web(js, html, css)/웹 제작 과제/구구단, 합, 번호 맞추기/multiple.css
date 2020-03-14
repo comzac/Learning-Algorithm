@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+	
+	h1{
+		text-align: center;
+	}
+	
+	div#container{
+		width : 400px;
+		height : 500px;
+		padding : 10px;
+		margin :auto;
+		margin-top : 100px;
+		border: 1px solid yellow;
+		background-image: url("number.jpg");
+	}
+
+	div#buttons{
+		margin-left: 30px;
+	}
+	table{
+		margin : auto;
+	}
+	
+	th{
+		border: 1px solid green;
+		text-align: center;
+		font-weight: bold;
+		color: blue;
+	}
+	
+	tr td {
+		width: 10%;
+		border: 1px solid red;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+	body{
+		background-color: pink;
+	}
+	
